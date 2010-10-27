@@ -1,0 +1,10 @@
+This sample app comes along with a neat tutorial to get started with the 
+GData framework, but as of 10/26/10 the version of the framework is 1.10.0
+and it doesn't contain the following methods that are called by the original
+source of the app:
+[GDataServiceGoogleYouTube fetchYouTubeFeedWithURL:delegate:didFinishSelector:didFailSelector:]
+[GDataServiceGoogleYouTube fetchYouTubeQuery:delegate:didFinishSelector:didFailSelector:]
+
+I looked at the GData source code and these methods are not defined there,
+so I fixed that. Next exercise is to figure out what's wrong when you double-click
+on a thumbnail.
